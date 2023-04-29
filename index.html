@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>login form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section class="login-form">
+      <div class="container">
+        <img
+          srcset="./images/main.jpg 1x, ./images/main@2x.jpg 2x"
+          src="./images/main.jpg"
+          alt="main fon"
+          width="720"
+          height="900"
+        />
+
+        <div class="content">
+          <p class="top-text">Welcome back</p>
+          <h1 class="title">Login to your account</h1>
+          <form>
+            <label class="label-input" for="password"> Password</label>
+            <input
+              class="input"
+              type="password"
+              name="password"
+              id="password"
+              required
+              minlength="6"
+              maxlength="8"
+              pattern="[0-9a-fA-F]{4,8}"
+              placeholder="*********"
+              autocomplete="on"
+            />
+
+            <label class="label-input" for="user-email">Email</label>
+            <input
+              class="input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              required
+              placeholder="John.snow@gmail.com"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              autocomplete="on"
+            />
+
+            <label class="label-radio" for="remember">
+              <input
+                class="input-radio"
+                type="radio"
+                name="remember"
+                id="remember"
+              />Remember me
+            </label>
+
+            <button class="button one" type="submit">Login now</button>
+
+            <button class="button second" type="submit">
+              Or sign-in with google
+            </button>
+            <button class="button three" type="button">Registration</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
